@@ -16,7 +16,7 @@ function Home() {
       navigate("/login");
     } else {
       axios
-        .get("http://localhost:3001/posts", {
+        .get("https://maturita-api-c2cbef7c0075.herokuapp.com/posts", {
           headers: { accessToken: localStorage.getItem("accessToken") },
         })
         .then((response) => {
@@ -33,7 +33,7 @@ function Home() {
   const likeAPost = (postId) => {
     axios
       .post(
-        "http://localhost:3001/likes",
+        "https://maturita-api-c2cbef7c0075.herokuapp.com/likes",
         { PostId: postId },
         { headers: { accessToken: localStorage.getItem("accessToken") } }
       )

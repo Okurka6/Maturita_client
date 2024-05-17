@@ -18,7 +18,7 @@ function Registration() {
   });
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/auth", data).then(() => {
+    axios.post("https://maturita-api-c2cbef7c0075.herokuapp.com/auth", data).then(() => {
       navigate("/");;
     });
   };

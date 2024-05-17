@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/auth/auth", {
+      .get("https://maturita-api-c2cbef7c0075.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

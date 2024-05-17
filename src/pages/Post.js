@@ -13,11 +13,11 @@ function Post() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/posts/byId/Id").then((response) => {
+    axios.get("https://maturita-api-c2cbef7c0075.herokuapp.com/posts/byId/Id").then((response) => {
       setPostObject(response.data);
     });
 
-    axios.get("http://localhost:3001/comments/Id").then((response) => {
+    axios.get("https://maturita-api-c2cbef7c0075.herokuapp.com/comments/Id").then((response) => {
       setComments(response.data);
     });
   }, []);
@@ -25,7 +25,7 @@ function Post() {
   const addComment = () => {
     axios
       .post(
-        "http://localhost:3001/comments",
+        "https://maturita-api-c2cbef7c0075.herokuapp.com/comments",
         {
           commentBody: newComment,
           PostId: id,
@@ -52,7 +52,7 @@ function Post() {
 
   const deleteComment = (id) => {
     axios
-      .delete(`http://localhost:3001/comments/${id}`, {
+      .delete(`https://maturita-api-c2cbef7c0075.herokuapp.com/comments/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
@@ -66,7 +66,7 @@ function Post() {
 
   const deletePost = (id) => {
     axios
-      .delete(`http://localhost:3001/posts/${id}`, {
+      .delete(`https://maturita-api-c2cbef7c0075.herokuapp.com/posts/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
