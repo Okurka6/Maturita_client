@@ -1,3 +1,1177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.likeBttn {
+  color: rgba(250, 250, 250, 0.8);
+}
+.unlikeBttn {
+  color: white;
+}
+
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* CREATE POST PAGE CSS */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  height: 70vh;
+  display: block;
+  position: absolute;
+  left: 10%;
+  top: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: rgba(19, 10, 81, 0.481);
+  border-radius: 25px;
+}
+.textovePole{
+color: #000000;
+position: absolute;
+display: block;
+left: 10%;
+top: 50%;
+width: 80%;
+height: 200px;
+box-sizing: border-box;
+resize: none;
+border-radius: 15px;
+font-size: 20px;
+
+}
+.nazevPole{
+  color: #000000;
+  position: absolute;
+  display: flex;
+  left: 20%;
+  top: 10%;
+  
+  }
+.ten{
+  position: absolute;
+  display: block;
+  left:35%;
+  bottom: 10px;
+  width: 30%;
+}
+.titleCreate{
+color: #2C1E4A;
+position: absolute;
+display: block;
+left: 10%;
+font-size: 4vh;
+}
+.titleCreate2{
+  color: #2C1E4A;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 10%;
+  font-size: 4vh;
+  }
+.labelLogin{
+color: #2C1E4A;
+font-size: 3vh;
+position: absolute;
+display: block;
+
+}
+.labelCreate1{
+  font-size: 3vh;
+  position: absolute;
+  display: block;
+  top: 20%;
+}
+.labelCreate2{
+  font-size: 3vh;
+  position: absolute;
+  display: block;
+  top: 45%;
+}
+
+.registr{
+  display: block;
+  position: absolute;
+  top: 15vh;
+  left: 30%;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 70vh;
+  background-color: rgba(19, 10, 81, 0.481);
+
+  z-index: 5;
+  border-radius: 25px;
+}
+.formContainer {
+  display: flex;
+  
+  left: 0;
+  top: 15vh;
+  left: 30%;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+  padding-top: 100px;
+  z-index: 5;
+}
+
+#inputLogin{
+  font-size: 20px;
+  position: relative;
+  display:flex;
+  margin-top: 15% ;
+  margin-left: 20%;
+  width: 60%;
+}
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+#inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 10%;
+
+}
+#inputCreatePost2 {
+  height: 40px;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 15%;
+
+}
+#inputCreatePost3 {
+  height: 40px;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 15%;
+
+}
+.regi{
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 0;
+}
+.logoutB{
+  margin: 0;
+}
+
+.formContainer button {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  color: white;
+  margin-top: 10vh;
+}
+.formContainer label{
+  color: aliceblue;
+}
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e689b 0%, #5f0f407f 74%);
+  color: white;
+  margin-top: 10vh;
+}
+
+span {
+  color: red;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #d5d5d582;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  flex: 5%;
+  height: 100%;
+  top: 0;
+  left: 5%;
+  display: flex;
+  position:relative;
+  align-items: center;
+  color: #000000;
+  
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 20%;
+  text-decoration: none;
+  color: #000000;
+  width: 33%;
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+/* INDIVIDUAL POST */
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.addCommentContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  display: block;
+  position: absolute;
+  top: 15vh;
+  left: 30%;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 60vh;
+  background-color: rgba(19, 10, 81, 0.481);
+  padding-top: 50px;
+  z-index: 5;
+  border-radius: 25px;
+}
+.loginContainer label{
+  color: aliceblue;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.loginContainer input,
+button {
+  width: 50%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.loginContainer button {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  color: white;
+  margin-top: 10vh;
+}
+.loginContainer button:hover {
+  cursor: pointer;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e689b 0%, #5f0f407f 74%);
+  color: white;
+  margin-top: 10vh;
+}
+
+.loginContainer input {
+  border: 0px solid rgba(193, 199, 206, 0.759);
+}
+.blackBlock{
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  z-index: 1;
+}
+
+/*home page*/
+.wrapper{
+  width: 100%;
+}
+.blackBlock2{
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  z-index: 1;
+}
+  .blackBlock2 h1{
+    margin-top: 0;
+    position: absolute;
+    display: block;
+    font-size: 8vh;
+    color: aliceblue;
+    left:10%;
+    top: 30vh;
+  }
+  .introP{
+    width: 60%;
+    height:60%;
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+  }
+.intro{
+  width: 100%;
+  height: 100vh;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+}
+.howItWorks{
+  width: 100%;
+  height: 100vh;
+  background-color: #310e68;
+  background-image: linear-gradient(226deg, #310e68 0%, #5f0f40 74%);
+}
+  .howItWorks h1{
+    margin-top: 0;
+    position: absolute;
+    display: block;
+    font-size: 8vh;
+    color: aliceblue;
+    left:10%;
+    top: 130vh;
+  }
+  .howItWorks2{
+    width: 100%;
+    height: 100vh;
+    background-color: #E6EBDD;
+    
+  }
+    
+  .settingP{
+    width: 40%;
+    height:40%;
+    position: absolute;
+    display: block;
+    left: 10%;
+    top:150vh;
+  }
+  .text1{
+    height: 60%;
+    width: 40%;
+    background-color: #310e68;
+    position: absolute;
+    display: block;
+    top:140vh;
+    right: 10%;
+    border-radius: 20px;
+    color: aliceblue;
+    text-align: center;
+  }
+  .text1 p{
+    padding: 2%;
+
+    font-size: 4vh;
+  }
+.postBlock{
+  width: 100%;
+  height: auto;
+  
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);  
+}
+.postBlock h1{
+  font-size: 50px;
+  color: #ffffff;
+  margin-left: 5%;
+  margin-top: 0;
+  padding-top: 50px;
+}
+.postBlock p{
+  color: #ffffff;
+}
+    /*Příspěvek*/
+    .post {
+      width: 42.5%;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-flex;
+      position:relative;
+      margin-left: 5%;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: azure;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .post .title {
+      flex: 20%;
+      border-bottom: 1px solid lightgray;
+      background-color: #310e68;
+      background-image: linear-gradient(226deg, #310e68 0%, #5f0f40 74%); 
+      padding-left: 15px;
+      place-content: center;
+      color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    .post .body {
+      flex: 60%;
+      padding-left: 2%;
+      padding-right: 2%;
+      place-content: center;
+    }
+    
+    .post .footer {
+      flex: 20%;
+      border-top: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      padding-left: 70%;
+      background-color: rgb(183, 188, 188);
+      color: rgb(74, 74, 74);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    
+    .footer .username {
+      flex: 50%;
+    }
+    .wrapperPost{
+      margin-top: 10vh;
+      display: inherit;
+      margin-left: 5%;
+      left: 5%;
+      width: 90%;
+      background-color: rgb(240, 248, 255);
+      border-radius: 20px;
+      
+    }
+.secured{
+  width: 100%;
+  height: 50vh;
+  background-color: #310e68;
+  background-image: linear-gradient(226deg, #310e68 0%, #5f0f40 74%);
+}
+  .secured h1{
+  font-size: 50px;
+  color: #ffffff;
+  margin-left: 25%;
+  margin-top: 0;
+  padding-top: 50px;
+  width: 50%;
+  position: absolute;
+  display: block;
+  vertical-align: bottom;
+  }
+
+.startNow{
+  width: 100%;
+  height: 100vh;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+}
+.contact{
+  width: 100%;
+  height: 40vh;
+  background-color: #ffffff;
+}
+.logB{
+  margin-top: 0;
+  
+}
+
+.blackBlock3{
+  background-color: #353840;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  z-index: 1;
+}
+.blackBlock3 h1{
+ z-index: 6;
+ position: absolute;
+ left: 60%;
+ top: 40vh;
+ font-size: 10vw;
+ margin: 0;
+}
+.blackBlock3 p{
+  z-index: 6;
+  position: absolute;
+  left: 60%;
+  top: 58vh;
+  font-size: 4vw;
+  margin: 0;
+}
+.heko{
+  z-index: 6;
+  position: absolute;
+  left: 40%;
+  top: 140vh;
+  font-size: 6vw;
+  margin: 0;
+  color: #353840;
+}
+
+.hedo{
+  z-index: 6;
+  position: absolute;
+  left: 40%;
+  top: 158vh;
+  font-size: 4vw;
+  margin: 0;
+  color: #353840;
+}
+.introU{
+  width: 100%;
+  height: 100vh;
+}
+.introUU{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  opacity: 0.2;
+  background-color: #000000;
+}
+.introG{
+  width: 100%;
+  height: 100vh;
+}
+.introGG{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  opacity: 0.2;
+  background-color: #000000;
+}
+.postBlockU{
+  width: 100%;
+  height: auto;
+  top: 200vh;
+  background-color: #ffffff;
+
+}
+.wrapperPost2{
+  margin-top: 10vh;
+      display: inherit;
+      margin-left: 5%;
+      left: 5%;
+      width: 90%;
+      background-color: #E6EBDD;
+      border-radius: 20px;
+      margin-bottom: 5%;
+}
+
+.post2 {
+  width: 42.5%;
+  height: 300px;
+  border-radius: 10px;
+  display: inline-flex;
+  position:relative;
+  margin-left: 5%;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post2 .title2 {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: #353840;
+  
+  padding-left: 15px;
+  place-content: center;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.post2 .body2 {
+  flex: 60%;
+  padding-left: 2%;
+  padding-right: 2%;
+  place-content: center;
+}
+
+.post2 .footer2 {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 70%;
+  background-color: #353840;
+  color: rgb(148, 148, 148);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer2 .username2 {
+  flex: 50%;
+}
+
+.secured2{
+  width: 100%;
+  height: 50vh;
+  background-color: #353840;
   text-align: center;
+  
+}
+.secured2 p{
+  color: white;
+  font-size: 5vw;
+  
+  padding-top: 10%;
+}
+
+@media screen and (max-width:768px){
+  .navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #dfdfdf;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 8;
+  }
+  .navbar .links {
+    flex: 10%;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    display:flex;
+    position:relative;
+    
+  }
+  .navbar .links a{
+    display: inline;
+    width: 33%;
+    padding-right: 12%;
+    font-size: 13px;
+  }
+  .navbar .loggedInContainer {
+    flex: 30%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar .loggedInContainer h1 {
+    display: none;
+  }
+  .registr{
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 15%;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 50vh;
+    background-color: rgba(19, 10, 81, 0.481);
+  
+    z-index: 5;
+    border-radius: 25px;
+  }
+  .loginContainer {
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left:15%;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 50vh;
+    background-color: rgba(19, 10, 81, 0.481);
+    padding-top: 50px;
+    z-index: 5;
+    border-radius: 25px;
+  }
+  #inputLogin{
+    font-size: 20px;
+    position: relative;
+    display:flex;
+    margin-top: 20% ;
+    margin-left: 15%;
+    width: 70%;
+  }
+  .labelLogin{
+    color: #2C1E4A;
+    font-size: 3vh;
+    position: absolute;
+    display: block;
+    margin-top: 20%;
+    
+    }
+    .blackBlock2 h1{
+      margin-top: 0;
+      position: absolute;
+      display: block;
+      font-size: 8vh;
+      color: aliceblue;
+      left:5%;
+      width: 90%;
+      top: 20vh;
+      text-align: center;
+    }
+    .introP{
+      width: 70%;
+      height:70%;
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 0;
+    }
+    .howItWorks h1{
+      margin-top: 0;
+      position: absolute;
+      display: block;
+      font-size: 8vh;
+      color: aliceblue;
+      left:5%;
+      top: 100vh;
+      text-align: center;
+      width: 90%;
+
+    }
+    .settingP{
+      width: 40%;
+      height:40%;
+      position: absolute;
+      display: block;
+      left: 30%;
+      top:115vh;
+    }
+    .text1{
+      height: 50%;
+      width: 90%;
+      background-color: #310e68;
+      position: absolute;
+      display: block;
+      top:150vh;
+      right: 5%;
+      border-radius: 20px;
+      color: aliceblue;
+      text-align: center;
+    }
+    .text1 p{
+      padding: 0.6%;
+  
+      font-size: 3.3vh;
+    }
+    .post {
+      width: 90%;
+      height: 40vh;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      border-radius: 10px;
+      display:flex;
+      position:relative;
+      margin-left: 5%;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-bottom: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: azure;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .post .title {
+      flex: 15%;
+      border-bottom: 1px solid lightgray;
+      background-color: #310e68;
+      background-image: linear-gradient(226deg, #310e68 0%, #5f0f40 74%); 
+      padding-left: 15px;
+      place-content: center;
+      color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    .post .body {
+      flex: 60%;
+      padding-left: 2%;
+      padding-right: 2%;
+      place-content: center;
+    }
+    
+    .post .footer {
+      flex: 10%;
+      border-top: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      padding-left: 70%;
+      background-color: rgb(183, 188, 188);
+      color: rgb(74, 74, 74);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 10%;
+    }
+    
+    .footer .username {
+      flex: 50%;
+    }
+    .wrapperPost{
+      margin-top: 10vh;
+      display: inherit;
+      margin-left: 5%;
+      left: 5%;
+      height: auto;
+      width: 90%;
+      background-color: rgb(240, 248, 255);
+      border-radius: 20px;
+      
+    }
+    .post2 {
+      width: 90%;
+      height: 40vh;
+      
+      border-radius: 10px;
+      display:flex;
+      position:relative;
+      margin-left: 5%;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-bottom: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .post2 .title2{
+      flex: 15%;
+      border-bottom: 1px solid lightgray;
+      background-color: #353840;
+      padding-left: 15px;
+      place-content: center;
+      color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    .post2 .body2 {
+      flex: 60%;
+      padding-left: 2%;
+      padding-right: 2%;
+      place-content: center;
+    }
+    
+    .post2 .footer2 {
+      flex: 10%;
+      border-top: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      padding-left: 70%;
+      background-color: #353840;
+      color: rgb(148, 148, 148);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 10%;
+    }
+    
+    .footer2 .username2 {
+      flex: 50%;
+    }
+    .wrapperPost2{
+      margin-top: 5vh;
+      padding-top: 1%;
+      padding-bottom: 5%;
+      display: inherit;
+      margin-left: 5%;
+      left: 5%;
+      height: auto;
+      width: 90%;
+      background-color: #E6EBDD;
+      border-radius: 20px;
+    
+    }    
+    .secured h1{
+      font-size: 3vh;
+      color: #ffffff;
+      margin-left: 5%;
+      padding-top: 50%;
+      width: 90%;
+      
+      position:static;
+      
+      top: 20px;
+      text-align: center;
+      }
+      .formContainer {
+        display: flex;
+        left: 0;
+        top: 15vh;
+        left: 30%;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        padding-top: 0;
+        z-index: 5;
+      }
+      .createPostPage {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        height: 70vh;
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 20vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        background-color: rgba(19, 10, 81, 0.481);
+        border-radius: 25px;
+      }
+      .titleCreate{
+        color: #2C1E4A;
+        position: absolute;
+        display: block;
+        left: 10%;
+        font-size: 4vh;
+        top: 5%;
+        }
+        .titleCreate2{
+          color: #2C1E4A;
+          position: absolute;
+          display: block;
+          padding-top: 10%;
+          left: 10%;
+          font-size: 4vh;
+          top: 20%;
+          }
+          #inputCreatePost {
+            height: 40px;
+            margin-top: 10%;
+            padding-left: 10%;
+            font-size: 20px;
+            position: absolute;
+            display: block;
+            top: 12%;
+            left: 10%;
+          
+          }
+          .textovePole{
+            color: #000000;
+            position: absolute;
+            display: block;
+            left: 5%;
+            top: 35%;
+            width: 90%;
+            height: 50%;
+            box-sizing: border-box;
+            resize: none;
+            border-radius: 15px;
+            font-size: 20px;
+            
+            }
+            .secured2{
+              width: 100%;
+              height: 30vh;
+              background-color: #353840;
+              text-align: center;
+              
+            }
+            .secured2 p{
+              color: white;
+              font-size: 5vw;
+              
+              padding-top: 10%;
+            }
+            .introU{
+              width: 100%;
+              height: 100vh;
+              display: none;
+            }
+            .introUU{
+              display: block;
+            }
+            .introG{
+              width: 100%;
+              height: 100vh;
+              display: none;
+            }
+            .introGG{
+              display: block;
+            }
+            .blackBlock3 h1{
+              z-index: 6;
+              position: absolute;
+              left: 10%;
+              width: 80%;
+              text-align: center;
+              top: 40vh;
+              font-size: 10vw;
+              margin: 0;
+             }
+             .blackBlock3 p{
+               z-index: 6;
+               position: absolute;
+               left: 10%;
+              width: 80%;
+              text-align: center;
+               top: 58vh;
+               font-size: 4vw;
+               margin: 0;
+             }
+             .heko{
+               z-index: 6;
+               position: absolute;
+               left: 10%;
+              width: 80%;
+              text-align: center;
+               top: 140vh;
+               font-size: 6vw;
+               margin: 0;
+               color: #353840;
+             }
+             
+             .hedo{
+               z-index: 6;
+               position: absolute;
+               left: 10%;
+              width: 80%;
+              text-align: center;
+               top: 158vh;
+               font-size: 4vw;
+               margin: 0;
+               color: #353840;
+             }
 }

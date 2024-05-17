@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="0" x2="921.594" y1="563.172" y2="563.172">
+<stop offset="0" stop-color="#d73cbe"/>
+<stop offset="1" stop-color="#beb3ff"/>
+</linearGradient>
+</defs>
+<g id="Untitled" vectornator:layerName="Untitled">
+<path d="M102.656 102.406L94.9688 102.656C41.8241 106.547 0 150.809 0 204.875L0 921.562L0.25 929.188C4.22088 982.674 48.8035 1024 102.438 1023.94L819.125 1023.94L826.812 1023.69C880.327 1019.69 921.689 975.07 921.594 921.406L921.594 563.219L921.219 557.219C918.019 530.319 894.418 510.569 867.375 512.156C840.333 513.744 819.218 536.13 819.188 563.219L819.188 921.438L102.406 921.594L102.406 204.812L461.562 204.812L467.562 204.469C494.462 201.269 514.213 177.668 512.625 150.625C511.037 123.582 488.652 102.436 461.562 102.406L102.656 102.406Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M845.969 0.03125C819.301 0.0590388 792.625 10.2521 772.281 30.5938L256.625 546.312L207.906 740.25C193.98 795.955 227.88 830.06 283.688 816.031L477.625 767.375L993.375 251.625C1012.95 232.112 1023.94 205.607 1023.97 177.969C1024 150.331 1013.06 123.803 993.531 104.25L919.688 30.4375C899.301 10.1383 872.637 0.0034612 845.969 0.03125ZM743.656 204.812L743.719 204.812L819.188 280.375L536.25 563.219L460.781 487.781L743.656 204.812ZM389.875 563.219L460.781 634.125L426.781 668.156L332.781 691.219L356.344 596.781L389.875 563.219Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</svg>

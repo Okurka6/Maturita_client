@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1137 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="-0.000257486" x2="1137.78" y1="512" y2="512">
+<stop offset="0" stop-color="#d73cbe"/>
+<stop offset="0.469799" stop-color="#beb3ff"/>
+<stop offset="1" stop-color="#beb3ff"/>
+</linearGradient>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="1024" width="1137" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Untitled" vectornator:layerName="Untitled">
+<path d="M597.333 739.556L597.333 682.553C597.396 619.804 648.248 568.952 710.997 568.889L825.003 568.889C887.808 568.889 938.667 619.748 938.667 682.553L938.667 739.556L1080.95 739.556C1112.35 739.556 1137.78 764.814 1137.78 796.444C1137.78 827.847 1112.41 853.333 1080.95 853.333L938.667 853.333L938.667 910.336C938.604 973.085 887.752 1023.94 825.003 1024L710.997 1024C648.222 1024 597.333 973.111 597.333 910.336L597.333 853.333L56.832 853.333C41.7401 853.364 27.2584 847.378 16.5921 836.701C5.92578 826.024-0.0454427 811.536-6.29699e-15 796.444C-6.29699e-15 765.042 25.3724 739.556 56.832 739.556C56.832 739.556 597.333 739.556 597.333 739.556ZM199.111 113.664C199.174 50.9151 250.026 0.0627177 312.775 0L426.78 0C489.586 0 540.444 50.8587 540.444 113.664L540.444 170.667L1080.95 170.667C1112.35 170.667 1137.78 195.925 1137.78 227.556C1137.78 258.958 1112.41 284.444 1080.95 284.444L540.444 284.444L540.444 341.447C540.382 404.196 489.529 455.048 426.78 455.111L312.775 455.111C250 455.111 199.111 404.222 199.111 341.447L199.111 284.444L56.832 284.444C41.7401 284.475 27.2584 278.489 16.5921 267.812C5.92578 257.135-0.0454424 242.647 0 227.556C0 196.153 25.3724 170.667 56.832 170.667L199.111 170.667C199.111 170.667 199.111 113.664 199.111 113.664ZM312.889 113.778L312.889 341.333L426.667 341.333L426.667 113.778L312.889 113.778ZM711.111 682.667L711.111 910.222L824.889 910.222L824.889 682.667L711.111 682.667Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+</g>
+</svg>
